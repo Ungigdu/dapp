@@ -110,5 +110,8 @@ window.deposit = deposit
 window.withdraw = withdraw
 window.getUserLocks = getUserLocks
 
+
+let n = await getProductSales(stake)
+$("#product_sales").html(n.length)
 let d = await getUserLocks(lock, "0x2F3B65fD3f5b4Efa1ccb258757aCc504aFd67F20");
 $("#log_show").html(d[0].locked)
